@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">BenchSuite</string>
+    <string name="okay">Okay</string>
+    <string name="source">Source</string>
+    <string name="benchmark">Benchmark</string>
+    <string name="click_here">Click here</string>
+    <string name="run">Run</string>
+    <string name="info">Info</string>
+    <string name="back">Back</string>
+    <string name="about">About</string>
+    <string name="version">Version</string>
+    <string name="github">Github</string>
+    <string name="benchmarking" tools:ignore="TypographyEllipsis">Benchmarking...</string>
+    <string name="benchmarked">Benchmarked</string>
+    <string name="hackbench_summary">A scheduler and IPC performance benchmark using processes</string>
+    <string name="scheduler_latency">Scheduler latency</string>
+    <string name="callbench_summary">A program to measure the speed of simple time syscalls and vDSO calls, as well as basic file I/O</string>
+    <string name="app_logo">App Logo</string>
+    <string name="release_channel">Release Channel</string>
+    <string name="credits">Credits</string>
+    <string name="licenses">Licenses</string>
+    <string name="hackbench_note" tools:ignore="TypographyDashes">The benchmark time indicates the system\'s performance efficiency in scheduling and inter-process communication, with lower times reflecting better performance</string>
+    <string name="callbench_note" tools:ignore="TypographyDashes">Excellent performance with syscall times and file read operations being very low; higher times would indicate poor performance</string>
+    <string name="pipebench_note">Good performance indicates low total time and high operations per second, while slow performance reflects high total time and low operations per second</string>
+    <string name="starting_benchmark" tools:ignore="TypographyEllipsis">Starting %1$s...</string>
+    <string name="completed_benchmark">Completed %1$s</string>
+    <string name="more_apps_on_play_store">More apps on Play Store</string>
+    <string name="run_all_benchmarks">Run all benchmarks</string>
+    <string name="note">Note</string>
+    <string name="scheduler_throughput">Scheduler throughput</string>
+    <string name="pipebench_summary">A scheduler latency benchmark via pipe communication</string>
+    <string name="syscalls_and_i_o_speed">Syscalls and I/O speed</string>
+    <string name="notes">Notes</string>
+</resources>
