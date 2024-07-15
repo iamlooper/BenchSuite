@@ -1,4 +1,4 @@
-![BenchSuite](https://github.com/iamlooper/BenchSuite/raw/main/banner.jpg)
+![BenchSuite](https://github.com/iamlooper/BenchSuite/raw/main/banner.png)
 
 # BenchSuite
 An Android app that serves as a wrapper, offering a variety of benchmarks.
