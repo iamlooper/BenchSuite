@@ -7,7 +7,7 @@ import com.looper.benchsuite.MyApp
 import com.looper.benchsuite.R
 
 class MainViewModel : ViewModel() {
-    private val _title = MutableLiveData(MyApp.applicationContext().getString(R.string.app_name))
+    private val _title = MutableLiveData(MyApp.getAppContext()!!.getString(R.string.app_name))
     val title: LiveData<String> = _title
 
     private val _showBackButton = MutableLiveData(false)
