@@ -6,6 +6,6 @@ import com.looper.android.support.App
 class MyApp : App() {
 
     companion object {
-        fun applicationContext(): Context = App.applicationContext()
+        fun getAppContext(): Context? = App.getAppContext()
     }
 }
