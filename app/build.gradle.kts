@@ -86,4 +86,6 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(libs.looper.android.support)
+    implementation(libs.androidx.work.runtime)
+    implementation(libs.jsoup)
 }

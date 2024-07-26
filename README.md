@@ -5,7 +5,6 @@ An Android app that serves as a wrapper, offering a variety of benchmarks.
 
 ## Download 📲
 You can download BenchSuite from the following:
-- [Play Store](https://play.google.com/store/apps/details?id=com.looper.benchsuite)
 - [Pling](https://www.pling.com/p/2177388)
 
 ## Benchmarks ⚡
