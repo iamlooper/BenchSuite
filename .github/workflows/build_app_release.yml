@@ -35,7 +35,7 @@ jobs:
           keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
 
       - name: Upload Signed APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: apk-release
           path: ${{steps.sign_app.outputs.signedFile}}
