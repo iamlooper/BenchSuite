@@ -25,7 +25,7 @@ jobs:
           ./gradlew assembleDebug
 
       - name: Sign Apk
-        uses: ilharp/sign-android-release@v1
+        uses: ilharp/sign-android-release@v2
         id: sign_app
         with:
           releaseDir: app/build/outputs/apk/debug
