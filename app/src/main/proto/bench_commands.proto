@@ -1,0 +1,58 @@
+// proto/bench_commands.proto - BenchSuite-specific command and response messages
+syntax = "proto3";
+package bridge;
+
+option java_package        = "io.github.iamlooper.benchsuite.proto";
+option java_multiple_files = true;
+
+import "config.proto";
+import "results.proto";
+
+// --- Kotlin → Rust (requests) ---
+
+// type_url: "bench.init"
+// Ring buffer native pointer is obtained by Rust via GetDirectBufferAddress()
+// in nativeInitBuffer(). This Envelope payload carries only capacity for
+// a server-side sanity check so Rust can validate the header write won't overflow.
+message InitRequest {
+    uint32 ring_buffer_capacity = 1;
+}
+
+// type_url: "bench.suite.start"
+message SuiteStartRequest {
+    benchsuite.SuiteConfig config = 1;
+}
+
+// type_url: "bench.single.start"
+message SingleStartRequest {
+    uint32 bench_id               = 1;
+    benchsuite.SuiteConfig config = 2;
+}
+
+// type_url: "bench.cancel"  - no payload
+// type_url: "bench.results.get"  - no payload
+// type_url: "bench.available.get"  - no payload
+
+// --- Rust → Kotlin (responses via onEnvelope callback) ---
+
+// type_url: "bench.init.ok"        - status OK, no payload
+// type_url: "bench.suite.started"  - status OK, no payload (ack; run streams via ring buffer)
+// type_url: "bench.single.started" - status OK, no payload (ack; run streams via ring buffer)
+// type_url: "bench.cancelled"      - status OK, no payload
+
+// type_url: "bench.results"
+message ResultsResponse {
+    benchsuite.SuiteResults results = 1;
+}
+
+// type_url: "bench.available"
+message AvailableResponse {
+    repeated BenchmarkDescriptor benchmarks = 1;
+}
+
+message BenchmarkDescriptor {
+    uint32 id       = 1;
+    string name     = 2;
+    string category = 3;
+    string unit     = 4;
+}

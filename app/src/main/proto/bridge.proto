@@ -1,0 +1,20 @@
+// proto/bridge.proto - generalized JNI envelope (shared by all commands)
+syntax = "proto3";
+package bridge;
+
+option java_package        = "io.github.iamlooper.benchsuite.proto";
+option java_multiple_files = true;
+
+enum Status {
+  OK    = 0;
+  ERROR = 1;
+}
+
+message Envelope {
+  string              correlation_id = 1;
+  string              type_url       = 2;
+  bytes               payload        = 3;
+  map<string, string> meta           = 4;
+  Status              status         = 5;
+  string              error          = 6;
+}

@@ -1,0 +1,46 @@
+// proto/results.proto - SuiteResults and subordinate messages
+syntax = "proto3";
+package benchsuite;
+
+option java_package        = "io.github.iamlooper.benchsuite.proto";
+option java_multiple_files = true;
+
+message SuiteResults {
+    repeated CategoryResult categories = 1;
+    DeviceSnapshot          device     = 2;
+    RunMetadata             metadata   = 3;
+}
+
+message CategoryResult {
+    string                   category   = 1;
+    repeated BenchmarkResult benchmarks = 2;
+}
+
+message BenchmarkResult {
+    string id           = 1;
+    string name         = 2;
+    double metric_p50   = 3;
+    double metric_p99   = 4;
+    double metric_best  = 5;
+    double metric_mean  = 6;
+    double throughput   = 7;
+    string unit         = 8;
+    double variance_pct = 9;
+}
+
+message DeviceSnapshot {
+    string brand         = 1;
+    string model         = 2;
+    string soc           = 3;
+    string abi           = 4;
+    int32  cpu_cores     = 5;
+    int64  ram_bytes     = 6;
+    int32  android_api   = 7;
+}
+
+message RunMetadata {
+    string app_version       = 1;
+    string stability_rating  = 2;
+    int64  started_at_ms     = 3;
+    int64  completed_at_ms   = 4;
+}

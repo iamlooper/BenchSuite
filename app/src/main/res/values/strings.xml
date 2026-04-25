@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">BenchSuite</string>
+
+    <!-- Common -->
+    <string name="cd_settings">Settings</string>
+    <string name="cd_about">About</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_cancel_run">Cancel run</string>
+    <string name="cd_upload_to_leaderboard">Upload to leaderboard</string>
+    <string name="common_anonymous">Anonymous</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_save">Save</string>
+    <string name="common_published">Published</string>
+    <string name="common_yes">Yes</string>
+    <string name="common_no">No</string>
+    <string name="common_delete">Delete</string>
+    <string name="common_run_not_found_title">Run not found</string>
+    <string name="common_section_device">Device</string>
+    <string name="common_section_run_info">Run info</string>
+    <string name="common_section_category_details">Category details</string>
+    <string name="common_detail_soc">SoC</string>
+    <string name="common_detail_abi">ABI</string>
+    <string name="common_detail_cpu_cores">CPU cores</string>
+    <string name="common_detail_ram">RAM</string>
+    <string name="common_detail_android_api">Android API</string>
+    <string name="common_detail_battery">Battery</string>
+    <string name="common_detail_charging">Charging</string>
+    <string name="common_detail_app_version">App version</string>
+    <string name="common_detail_started">Started</string>
+    <string name="common_detail_completed">Completed</string>
+
+    <!-- Home Screen -->
+    <string name="home_hero_headline">How fast is your device, really?</string>
+    <string name="home_hero_body">Run tests that exercise real kernel and OS primitives, view detailed results by category, and share your scores on the leaderboard.</string>
+    <string name="home_section_explore">Explore</string>
+    <string name="home_section_recent_runs">Recent runs</string>
+    <string name="home_section_start_here">Start here</string>
+    <string name="home_local_runs_count">%1$d local runs</string>
+    <string name="home_score_chip">Latest: %1$s</string>
+    <string name="home_leaderboard_label">Leaderboard</string>
+    <string name="home_leaderboard_title">See how your device compares.</string>
+    <string name="home_leaderboard_body">Browse published runs ranked by overall score.</string>
+    <string name="home_empty_title">No runs yet</string>
+    <string name="home_empty_body_ready">Tap the button below to start your first benchmark.</string>
+    <string name="home_empty_body_preparing">Getting things ready. This will only take a moment.</string>
+    <string name="home_fab_preparing_engine">Preparing engine</string>
+    <string name="home_fab_benchmark_running">Benchmark running</string>
+    <string name="home_fab_run_benchmark">Run benchmark</string>
+    <string name="home_engine_preparing">Engine preparing</string>
+    <string name="home_engine_ready">Ready to run</string>
+    <string name="home_engine_running">Benchmark in progress</string>
+    <string name="home_engine_complete">Run complete</string>
+    <string name="home_engine_cancelled">Run cancelled</string>
+    <string name="home_engine_error">Engine error</string>
+
+    <!-- Runner Screen -->
+    <string name="runner_title">Running benchmark</string>
+    <string name="runner_hero_headline">Benchmark in progress</string>
+    <string name="runner_hero_body">Sit tight. Your results will be ready when the run finishes.</string>
+    <string name="runner_section_suite_progress">Suite progress</string>
+    <string name="runner_overall_progress">Overall progress</string>
+    <string name="runner_current_benchmark">Current benchmark</string>
+    <string name="runner_section_live_signal">Live signal</string>
+    <string name="runner_back_to_home">Back to Home</string>
+    <string name="runner_percent_total">%1$d%% total</string>
+    <string name="runner_benchmark_active">%1$d/%2$d active</string>
+    <string name="runner_engine_preparing">Preparing suite</string>
+    <string name="runner_engine_ready">Ready</string>
+    <string name="runner_engine_executing">Executing</string>
+    <string name="runner_engine_complete">Complete</string>
+    <string name="runner_engine_cancelled">Cancelled</string>
+    <string name="runner_engine_error">Error</string>
+
+    <!-- Results Screen -->
+    <string name="results_title">Results</string>
+    <string name="results_section_error">Error</string>
+    <string name="results_run_not_found_body">This run may have been deleted or is no longer available.</string>
+    <string name="results_local_only">Local only</string>
+    <string name="results_benchmark_count">%1$d benchmarks</string>
+    <string name="results_view">View</string>
+
+    <!-- Category Detail Screen -->
+    <string name="category_detail_fallback_title">Category</string>
+    <string name="category_detail_not_found_title">Category not found</string>
+    <string name="category_detail_not_found_body">This category ID is not recognised.</string>
+    <string name="category_detail_no_data_title">No data available</string>
+    <string name="category_detail_no_data_body">We couldn\'t load this run. It may have been deleted.</string>
+    <string name="category_detail_section_empty">Empty</string>
+    <string name="category_detail_empty_title">No benchmarks in this category</string>
+    <string name="category_detail_empty_body">This category doesn\'t have any benchmark results yet.</string>
+
+    <!-- Leaderboard Screen -->
+    <string name="leaderboard_title">Leaderboard</string>
+    <string name="leaderboard_empty_title">Nothing here yet</string>
+    <string name="leaderboard_empty_body">There are no published runs available, or we couldn\'t reach the server. Try again in a moment.</string>
+    <string name="leaderboard_retry">Retry</string>
+    <string name="leaderboard_published_runs_count">%1$d published runs</string>
+    <string name="leaderboard_global_title">Global leaderboard</string>
+    <string name="leaderboard_global_body">See how devices stack up. Top performers are highlighted.</string>
+    <string name="leaderboard_section_published_devices">Published devices</string>
+    <string name="leaderboard_rank">#%1$d</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_leaderboard">Leaderboard</string>
+    <string name="settings_display_name_title">Display Name</string>
+    <string name="settings_section_appearance">Appearance</string>
+    <string name="settings_theme_title">Theme</string>
+    <string name="settings_dynamic_colors_title">Dynamic Colors</string>
+    <string name="settings_dynamic_colors_subtitle">Use wallpaper-based Material You colors</string>
+    <string name="settings_dynamic_colors_unsupported">Requires Android 12 or later</string>
+    <string name="settings_pure_black_title">Pure Black</string>
+    <string name="settings_pure_black_subtitle">Use true black background on AMOLED displays</string>
+    <string name="settings_theme_dialog_title">Theme</string>
+    <string name="settings_display_name_dialog_title">Display Name</string>
+    <string name="settings_display_name_dialog_body">Shown on the leaderboard when you upload a run. Leave blank to appear as Anonymous.</string>
+    <string name="settings_name_char_count">%1$d/32</string>
+    <string name="settings_theme_follow_system">Follow System</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+
+    <!-- Upload Sheet -->
+    <string name="upload_sheet_title">Submit to Leaderboard</string>
+    <string name="upload_sheet_body">Your anonymised device data and scores will be shared publicly. Your display name is optional.</string>
+    <string name="upload_sheet_opt_in_chip">Opt-in only</string>
+    <string name="upload_sheet_anonymous_chip">Anonymous allowed</string>
+    <string name="upload_sheet_name_label">Display Name (optional)</string>
+    <string name="upload_sheet_uploading">Uploading…</string>
+    <string name="upload_sheet_submit">Submit</string>
+    <string name="upload_success">Run published to the leaderboard.</string>
+
+    <!-- Sparkline Chart -->
+    <string name="sparkline_measuring">Measuring…</string>
+
+    <!-- About Screen -->
+    <string name="about_title">About BenchSuite</string>
+    <string name="about_hero_headline">Raw performance truth, well visualized.</string>
+    <string name="about_hero_body">BenchSuite exercises real kernel and OS primitives, not synthetic workloads, to deliver accurate measurements. Results stay on your device unless you choose to share them.</string>
+    <string name="about_section_measures">What BenchSuite measures</string>
+    <string name="about_measures_body">Tests cover CPU, memory, scheduler, IPC, storage I/O, timers, and network. Each exercises real OS primitives for honest, reproducible scores.</string>
+    <string name="about_section_privacy">Privacy and uploads</string>
+    <string name="about_privacy_body">All results are stored locally. Publishing to the leaderboard is optional, anonymous, and always requires your confirmation.</string>
+    <string name="about_section_built_with">Built with</string>
+    <string name="about_chip_kotlin">Kotlin</string>
+    <string name="about_chip_compose">Compose</string>
+    <string name="about_chip_rust">Rust</string>
+    <string name="about_chip_supabase">Supabase</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_source_code">Source code</string>
+
+    <!-- Benchmark Card -->
+    <string name="benchmark_metric_p50_format">%1$s %2$s p50</string>
+    <string name="benchmark_metric_not_available">N/A</string>
+    <string name="higher_is_better">Higher is better</string>
+    <string name="lower_is_better">Lower is better</string>
+
+    <!-- Leaderboard Run Detail Screen -->
+    <string name="leaderboard_run_detail_title">Run details</string>
+    <string name="leaderboard_run_detail_not_found_body">This entry is no longer available. Go back and try again.</string>
+
+    <!-- Leaderboard Pagination -->
+    <string name="leaderboard_load_more">Load more</string>
+
+    <!-- Leaderboard Info Cards -->
+    <string name="leaderboard_run_trim_notice">Older runs are periodically removed to keep the leaderboard current. Only the most recent runs per device are kept.</string>
+    <string name="leaderboard_version_comparison_warning">Scores from different app versions are not directly comparable because different versions may benchmark different workloads.</string>
+
+    <!-- Leaderboard Filters -->
+    <string name="leaderboard_filter_my_runs">My runs</string>
+    <string name="leaderboard_filter_version_all">All versions</string>
+    <string name="leaderboard_filter_version_cd">Select version</string>
+    <string name="leaderboard_my_runs_empty_title">No published runs yet</string>
+    <string name="leaderboard_my_runs_empty_body">You haven\'t published any runs from this device. Run a benchmark and upload to appear here.</string>
+
+    <!-- Run Management -->
+    <string name="home_clear_all_runs">Clear all</string>
+    <string name="cd_delete_run">Delete run</string>
+    <string name="home_delete_run_confirm_title">Delete this run?</string>
+    <string name="home_delete_run_confirm_body">This benchmark run will be permanently removed from your device.</string>
+    <string name="home_clear_all_confirm_title">Clear all runs?</string>
+    <string name="home_clear_all_confirm_body">This will permanently delete all local benchmark runs from this device.</string>
+</resources>

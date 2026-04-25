@@ -1,0 +1,1 @@
+-- BenchSuite does not require custom database schemas.

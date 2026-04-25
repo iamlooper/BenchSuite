@@ -1,0 +1,1 @@
+-- BenchSuite does not use Supabase Storage buckets or object policies.

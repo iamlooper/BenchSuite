@@ -1,0 +1,10 @@
+// proto/config.proto - SuiteConfig
+syntax = "proto3";
+package benchsuite;
+
+option java_package        = "io.github.iamlooper.benchsuite.proto";
+option java_multiple_files = true;
+
+message SuiteConfig {
+    string storage_path = 1;  // app files dir path
+}

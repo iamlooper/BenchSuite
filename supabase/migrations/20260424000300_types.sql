@@ -1,0 +1,1 @@
+-- BenchSuite stores app enum values as text to preserve Android client compatibility.
